@@ -11,13 +11,21 @@ This page describes details regarding Project screen in Apache DolphinScheduler.
 | Task | Task is a discrete action in a Workflow. Apache DolphinScheduler supports SHELL, SQL, SUB_PROCESS (sub-process), PROCEDURE, MR, SPARK, PYTHON, DEPENDENT ( depends), and plans to support dynamic plug-in expansion, (SUB_PROCESS). It is also a separate process definition that can be started and executed separately. |
 | Task Instance | Instantiation of the task node in the process definition, which identifies the specific task execution status. |
 
+## Project List
+
+On the project screen, list of all the existing projects along with details like name, owner, workflow definition, process instance, create and update time. This page also facilitates operations like create, edit, and delete project.
+
 ## Create Project
 
-- Click "`Project Management`" to enter the project management page, click the "`Create Project`" button, enter the project name, project description, and click "Submit" to create a new project.
+- Click `Project Management` to enter the project management page, click the `Create Project` button. Enter details like project name, owned user, and project description, and click `Submit` to create a new project.
 
 ![project-list](../../../../img/new_ui/dev/project/project-list.png)
 
 ## Project Home
+
+Project Overview screen shows task status statistics and process status statistics along with the time stamp of project creation. The task status and process status statistics can be observed once the workflow definition is done.
+
+![project-overview](../../../../img/new_ui/dev/project/project-overview.png)
 
 - Click the project name link on the project management page to enter the project home page, as shown in the figure below, the project home page contains the task status statistics, process status statistics, and workflow definition statistics of the project. The introduction for those metrics:
 
@@ -25,5 +33,5 @@ This page describes details regarding Project screen in Apache DolphinScheduler.
 - Process status statistics: Within the specified time range, count the number of workflow instances status as submission success, running, ready to pause, pause, ready to stop, stop, failure, success, need fault tolerance, kill and waiting threads
 - Workflow definition statistics: Count the workflow definitions created by this user and granted by the administrator
 
-![project-overview](../../../../img/new_ui/dev/project/project-overview.png)
+
 

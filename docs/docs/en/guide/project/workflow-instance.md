@@ -44,12 +44,12 @@ Click `Project Management -> Workflow -> Workflow Instance`, enter the workflow 
      <p align="center">
        <img src="../../../../img/editDag-en.png" width="80%" />
      </p>
-- **Rerun：** re-execute the terminated process
-- **Recovery failed：** for failed processes, you can perform failure recovery operations, starting from the failed node
-- **Stop：** to **stop** the running process, the background code will first `kill` the worker process, and then execute `kill -9` operation
+- **Rerun：** re-execute the terminated process.
+- **Recovery failed：** for failed processes, you can perform failure recovery operations, starting from the failed node.
+- **Stop：** to **stop** the running process, the background code will first `kill` the worker process, and then execute `kill -9` operation.
 - **Pause:** Perform a **pause** operation on the running process, the system status will change to **waiting for execution**, it will wait for the task to finish, and pause the next sequence task.
-- **Resume pause:** to resume the paused process, start running directly from the **paused node**
-- **Delete:** delete the workflow instance and the task instance under the workflow instance
+- **Resume pause:** to resume the paused process, start running directly from the **paused node**.
+- **Delete:** delete the workflow instance and the task instance under the workflow instance.
 - **Gantt chart:** the vertical axis of the Gantt chart is the topological sorting of task instances of the workflow instance, and the horizontal axis is the running time of the task instances, as shown in the figure below:
 
 ![instance-gantt](../../../../img/new_ui/dev/project/instance-gantt.png)
